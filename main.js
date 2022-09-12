@@ -131,22 +131,16 @@
         }
         if (hTop > config.endFixed) {
 
-            console.log(9999999);
-            console.log(viSlotSticky.length);
-            console.log(config.startFixed2);
-            console.log(hTop);
             viSticky.style.position = `relative`;
             viSticky.style.top = config.distanceChangeTop + "px";
             viSticky.style.width = config.widthSidebar + "px";
             if (viSlotSticky.length > 1 && hTop < config.startFixed2) {
-                console.log(1231131354);
                 if (viSlotSticky[1]) {
                     viSlotSticky[1].style.position = "";
                     viSlotSticky[1].style.top = "";
                     viSlotSticky[1].style.width = config.widthWidgets + 'px';
                 }
                 if (config.connectElement) {
-                    console.log(2222222222);
                     var connectElement = document.querySelector(config.connectElement);
                     if (connectElement) {
                         connectElement.style.position = "";
@@ -155,24 +149,19 @@
                     }
                 }
                 if (viSlotSticky[2]) {
-                    console.log(4444444444);
                     viSlotSticky[2].style.position = "";
                     viSlotSticky[2].style.top = "";
                     viSlotSticky[2].style.width = config.widthWidgets + 'px';
                 }
                 if (viSlotSticky[3]) {
-                    console.log(55555555555);
                     viSlotSticky[3].style.position = "";
                     viSlotSticky[3].style.top = "";
                     viSlotSticky[3].style.width = config.widthWidgets + 'px';
                 }
             }
-            console.log(65465465465);
         }
 
-        console.log(between(hTop, config.startFixed2, config.endFixed2));
         if (config.startFixed2 && config.endFixed2 && between(hTop, config.startFixed2, config.endFixed2) && viSlotSticky.length > 1) {
-            console.log(54648465415);
             viSticky.style.position = "";
             viSticky.style.top = "";
             if (viSlotSticky[1]) {
